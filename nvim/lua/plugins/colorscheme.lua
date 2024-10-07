@@ -1,10 +1,11 @@
 return {
     {
-        "rebelot/kanagawa.nvim",
+        "catppuccin/nvim", 
+        name   = "catppuccin",
         config = function()
-            local lib = require('kanagawa')
-            lib.setup({ transparent = true })
-            lib.load("dragon")
+            local lib = require("catppuccin")
+            lib.setup({ transparent_background = true })
+            vim.cmd.colorscheme("catppuccin")
         end
     }
 }
