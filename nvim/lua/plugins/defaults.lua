@@ -11,7 +11,13 @@ return {
         end
     },
 
-    "williamboman/mason.nvim", -- package manager for lsp servers et all
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require('mason').setup({})
+            vim.keymap.set("n", "<leader>l", vim.cmd.Mason, { desc = "Open mason" })
+        end  
+    }, -- package manager for lsp servers et all
     "nvim-tree/nvim-web-devicons", -- icons
     "folke/which-key.nvim", -- doc for shortcuts
     -- "echasnovski/mini.icons", -- more icons??

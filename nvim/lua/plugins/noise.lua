@@ -6,7 +6,7 @@ return { -- floating command line c:
     {
         "rcarriga/nvim-notify",
         opts = {
-            background_colour = "#000000"
+            background_colour = "#FFFFFF"
         }
     }
   },
