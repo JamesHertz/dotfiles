@@ -1,6 +1,5 @@
-vim.cmd([[
-    highlight Normal guibg=NONE ctermbg=NONE
-]])
+-- Not needed anymore ... solved in lua/plugins/colorscheme.lua
+-- vim.cmd("highlight Normal guibg=NONE ctermbg=NONE") 
 
 vim.g.mapleader = " "
 vim.opt.tabstop = 4
@@ -12,6 +11,6 @@ vim.opt.number = true
 vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to clipboard" })
-vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]], { desc = "Paste from clipboard" })
-vim.keymap.set({ "n", "v" }, "<leader>e", [[:Ex<CR>]], { desc = "Go to explorer" })
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]],  { desc = "Copy to clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]],  { desc = "Paste from clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>e", ":Ex<CR>", { desc = "Go to explorer" })

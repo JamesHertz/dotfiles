@@ -16,6 +16,7 @@ return {
     "folke/which-key.nvim", -- doc for shortcuts
     -- "echasnovski/mini.icons", -- more icons??
 
+
     { -- comments
       "folke/ts-comments.nvim", 
       event = "VeryLazy",
@@ -25,6 +26,12 @@ return {
       end
     },
 
+    -- botton line
+    { 
+        'nvim-lualine/lualine.nvim', 
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        opts = {}
+    }
     
 }
 
