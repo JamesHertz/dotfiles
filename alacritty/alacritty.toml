@@ -1,0 +1,21 @@
+[window]
+opacity = 0.6
+blur=true
+dimensions = { columns = 80, lines = 20 }
+
+[keyboard]
+bindings = [
+    { key = 'v', mods = 'Super', mode = "~Vi", action = 'Paste' },
+    { key = 'c', mods = 'Super', mode = "~Vi", action = 'Copy' },
+    { key = 'F11', action = 'ToggleFullscreen' }
+]
+
+[font]
+# to list the fonts styles avaiable using the command `fs-list`
+size = 20
+normal.family = 'Fira Code'
+# bold.family   = 'FiraCode Nerd Bold'
+# italic.family = 'FiraCode Nerd Medium Italic'
+
+# For beautiful color themes go here: https://github.com/alacritty/alacritty-theme
+# for help type: `~/.config/alacritty`

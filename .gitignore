@@ -1,0 +1,6 @@
+*
+!alacritty
+!alacritty/*
+!nvim
+!nvim/**/*
+!.gitignore
