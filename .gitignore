@@ -4,3 +4,7 @@
 !nvim
 !nvim/**/*
 !.gitignore
+!hypr 
+!hypr/*
+!waybar
+!waybar/*

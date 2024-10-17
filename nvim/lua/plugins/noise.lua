@@ -6,7 +6,8 @@ return { -- floating command line c:
     {
         "rcarriga/nvim-notify",
         opts = {
-            background_colour = "#FFFFFF"
+            background_colour = "#FFFFFF",
+            fps = 60-- your FPS
         }
     }
   },
