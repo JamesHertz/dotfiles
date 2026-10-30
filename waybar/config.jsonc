@@ -50,7 +50,7 @@
                 10
             ],
             // "DP-1" : [11, 12, 13, 14, 15, 16, 17, 18, 19, 110]
-            // "DP-2" : [11, 12, 13, 14, 15, 16, 17, 18, 19, 110]
+            "DP-2" : [11, 12, 13, 14, 15, 16, 17, 18, 19, 110],
             "HDMI-A-1": [
                 11,
                 12,
@@ -171,7 +171,7 @@
         "on-click": "activate",
         "on-click-middle": "close",
         "ignore-list": [
-            "Alacritty"
+            "Alacritty", "com.mitchellh.ghostty"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition"
@@ -185,6 +185,7 @@
         "format": "{}% "
     },
     "memory": {
-        "format": "{}% "
+		"format": "{used:0.1f}G/{total:0.1f}G "
+        // "format": "{}% "
     }
 }
