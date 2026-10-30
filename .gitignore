@@ -8,3 +8,6 @@
 !hypr/*
 !waybar
 !waybar/*
+!.tmux.conf
+!ghostty/
+!ghostty/*
