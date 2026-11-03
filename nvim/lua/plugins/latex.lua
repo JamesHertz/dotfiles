@@ -43,4 +43,25 @@ return {
                 ]])
     end,
   },
+
+  {
+      "barreiroleo/ltex_extra.nvim",
+      ft = { "markdown", "tex" },
+      dependencies = { "neovim/nvim-lspconfig" },
+      -- yes, you can use the opts field, just I'm showing the setup explicitly
+      config = function()
+          require("ltex_extra").setup {
+              load_langs = { "en-US" }, -- en-US as default
+              init_check = true,
+              path       = vim.fn.expand("~") .. "/.local/share/ltex",
+              -- string : "none", "trace", "debug", "info", "warn", "error", "fatal"
+              log_level      = "error",
+			  server_opts    = {
+				  capabilities = require('blink.cmp').get_lsp_capabilities(),
+				  filetypes = { 'tex' }
+			  }
+
+          }
+      end
+  }
 }

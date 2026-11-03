@@ -13,7 +13,9 @@ bindings = [
 [font]
 # to list the fonts styles avaiable using the command `fs-list`
 size = 20
-normal.family = 'Fira Code'
+# normal.family = 'JetBrains Mono Nerd Font'
+normal.family = 'JetBrains Mono'
+# normal.family = 'Fira Code'
 # bold.family   = 'FiraCode Nerd Bold'
 # italic.family = 'FiraCode Nerd Medium Italic'
 

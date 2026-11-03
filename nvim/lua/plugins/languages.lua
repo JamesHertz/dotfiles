@@ -10,7 +10,19 @@ return {
         "mrcjkb/rustaceanvim",
         version = "^5",
         lazy = false,
-        -- enabled = false,
+        config = function()
+            vim.g.rustaceanvim = {
+                -- Plugin configuration
+                tools  = { enable_nextest = false },
+				server = { status_notify_level = false }, -- surpress warnings
+                default_settings = {
+                    -- rust-analyzer language server configuration
+                    ['rust-analyzer'] = {
+                        capabilities = require('blink.cmp').get_lsp_capabilities()
+                    },
+                },
+            }
+        end
     },
 
     -- comments

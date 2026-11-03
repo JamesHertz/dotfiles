@@ -37,7 +37,10 @@ map("n", "<leader>r", function()
 end, { desc = "run current file" })
 
 -- TODO: improve this
-map("n", "<leader>o", ":!open %<CR>",{ desc = "open current file" })
+-- map("n", "<leader>o", ":!open %<CR>",{ desc = "open current file" })
+-- map("n", "<leader>r", ":!./%<CR>", { desc = "run current file" })
+-- TODO: improve this
+-- map("n", "<leader>o", ":!jopen %<CR>",{ desc = "open current file" })
 
 -- map("n", "<leader>cd", function()
 --     vim.api.nvim_create_autocmd('BufWritePost', { command = "!./push.sh" })
